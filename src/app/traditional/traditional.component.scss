@@ -1,0 +1,35 @@
+@mixin center ($margin: auto, $left: 0, $right: 0) {
+    margin: $margin;
+    left: $left;
+    right: $right;
+}
+
+p {
+    width: 175px;
+    margin-left: 2em;
+    padding-bottom: 5px;
+    border-bottom: black solid 1px;
+}
+
+#my-button {
+    @include center;
+    position: absolute;
+    width: 120px;
+    padding: 8px 16px;
+    background-color: #2d2468;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer
+}
+
+#object {
+    @include center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 6em;
+    background-color: #7c6ce0;
+    border-radius: 50%;
+}

@@ -1,0 +1,25 @@
+@mixin center ($margin: auto, $left: 0, $right: 0) {
+    margin: $margin;
+    left: $left;
+    right: $right;
+}
+
+#main {
+    box-sizing: border-box;
+    height: calc(100% - 64px);
+    width: 100%;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+
+    #info {
+        position: absolute;
+        @include center;
+        width: 300px;
+        height: 300px;
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
