@@ -13,14 +13,82 @@
     margin: 0;
     padding: 0;
 
-    #info {
-        position: absolute;
-        @include center;
-        width: 300px;
-        height: 300px;
+    #navbar {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin: 1em 0 0 0;
+        overflow-x: hidden;
 
-        h1 {
-            text-align: center;
+        #items {
+            width: 600px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: initial;
+            margin: 0 auto;
+            padding: 0;
+
+
+            li {
+                margin: auto 0;
+                cursor: pointer;
+
+                a {
+                    color: darkslateblue;
+                    text-align: center;
+                    padding: 9px 22px;
+                    background-color: initial;
+                    transition: 0.2s ease-out;
+                    border-radius: 5px;
+                    border: #c7c7c7 1px solid;
+                }
+            }
+
+            li > a:hover { background-color: rgba(72, 61, 139, 0.2); }
         }
+    }
+
+    section {
+        box-sizing: border-box;
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #first {
+        margin-top: 75px;
+        padding-top: 16px;
+
+        #fake-banner {
+            height: 360px;
+            width: 820px;
+            margin-top: 40px;
+            border-radius: 8px;
+            background-color: #c7c7c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                color: darkslateblue;
+                font-size: 3em;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    #second {
+        margin-top: 50px;
+        padding-top: 16px;
+    }
+
+    #third {
+        margin-top: 50px;
+        padding: 16px 0 320px 0;
     }
 }

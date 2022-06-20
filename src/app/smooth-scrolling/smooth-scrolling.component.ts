@@ -9,6 +9,16 @@ export class SmoothScrollingComponent implements OnInit {
 
   constructor() { }
 
+  scrollToItem(element: Element): void {
+    console.log(element);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+    
+  }
+
   ngOnInit(): void {
   }
 
