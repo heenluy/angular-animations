@@ -1,5 +1,16 @@
 <div id="main">
-    <div id="info">
-        <h1>Animação de Scroll</h1>
-    </div>
+    <section id="scroll-container">
+        <div class="scroll-caption">
+            First Section \O/
+        </div>
+        <div id="first" class="scrollable" #first [@fadeFromTop]="handleScrollAnimation(first)">
+            This animation fades in from the top.
+        </div>
+        <div id="second" class="scrollable" #second [@fadeFromLaft]="handleScrollAnimation(second)">
+            This animation fades in from the laft.
+        </div>
+        <div id="third" class="scrollable" #third [@fadeFromRight]="handleScrollAnimation(third)">
+            This animation fades in from the right.
+        </div>
+    </section>
 </div>

@@ -39,6 +39,42 @@ export const myFirstAnimation = trigger('firstAnimation', [
     animate('{{ time }}')
   ]);
 
+  export const scrollTopAnimation = trigger('fadeFromTop', [
+    state('disabled', style({
+      opacity: '0',
+      transform: 'translate3d(0,-48px,0)'
+    })),
+    state('enabled', style({
+      opacity: '1',
+      transform: 'translate3d(0,0,0)'
+    })),
+    transition('disabled <=> enabled', animate('0.3s ease-in'))
+  ]);
+
+  export const scrollLaftAnimation = trigger('fadeFromLaft', [
+    state('disabled', style({
+      opacity: '0',
+      transform: 'translate3d(-120px,0,0)'
+    })),
+    state('enabled', style({
+      opacity: '1',
+      transform: 'translate3d(0,0,0)'
+    })),
+    transition('disabled <=> enabled', animate('0.3s ease-in'))
+  ]);
+
+  export const scrollRightAnimation = trigger('fadeFromRight', [
+    state('disabled', style({
+      opacity: '0',
+      transform: 'translate3d(120px,0,0)'
+    })),
+    state('enabled', style({
+      opacity: '1',
+      transform: 'translate3d(0,0,0)'
+    })),
+    transition('disabled <=> enabled', animate('0.3s ease-in'))
+  ]);
+
   export const slideInAnimation =
   trigger('routeAnimations', [
     transition('* <=> *', [
