@@ -48,7 +48,7 @@ export const myFirstAnimation = trigger('firstAnimation', [
       opacity: '1',
       transform: 'translate3d(0,0,0)'
     })),
-    transition('disabled <=> enabled', animate('0.3s ease-in'))
+    transition('disabled <=> enabled', animate('0.8s ease-in-out'))
   ]);
 
   export const scrollLaftAnimation = trigger('fadeFromLaft', [
@@ -60,7 +60,7 @@ export const myFirstAnimation = trigger('firstAnimation', [
       opacity: '1',
       transform: 'translate3d(0,0,0)'
     })),
-    transition('disabled <=> enabled', animate('0.3s ease-in'))
+    transition('disabled <=> enabled', animate('0.8s ease-in-out'))
   ]);
 
   export const scrollRightAnimation = trigger('fadeFromRight', [
@@ -72,7 +72,7 @@ export const myFirstAnimation = trigger('firstAnimation', [
       opacity: '1',
       transform: 'translate3d(0,0,0)'
     })),
-    transition('disabled <=> enabled', animate('0.3s ease-in'))
+    transition('disabled <=> enabled', animate('0.8s ease-in-out'))
   ]);
 
   export const slideInAnimation =

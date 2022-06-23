@@ -1,15 +1,15 @@
 <div id="main">
     <section id="scroll-container">
         <div class="scroll-caption">
-            First Section \O/
+            first element, no animation :(
         </div>
-        <div id="first" class="scrollable" #first [@fadeFromTop]="handleScrollAnimation(first)">
+        <div id="first" class="scrollable" #first [@fadeFromTop]="containsClass(first)">
             This animation fades in from the top.
         </div>
-        <div id="second" class="scrollable" #second [@fadeFromLaft]="handleScrollAnimation(second)">
+        <div id="second" class="scrollable" #second [@fadeFromLaft]="containsClass(second)">
             This animation fades in from the laft.
         </div>
-        <div id="third" class="scrollable" #third [@fadeFromRight]="handleScrollAnimation(third)">
+        <div id="third" class="scrollable" #third [@fadeFromRight]="containsClass(third)">
             This animation fades in from the right.
         </div>
     </section>
